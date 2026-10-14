@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://192.168.1.50:3000/ -->
+<html lang="no"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pokémon Scanner</title>
+    <link rel="stylesheet" href="./Pokémon Scanner_files/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Pokémon Scanner</h1>
+
+        <!-- Kameravisning -->
+        <div class="camera-container">
+            <video id="cameraStream" autoplay="" playsinline=""></video>
+            <canvas id="snapshotCanvas" class="hidden"></canvas>
+            <button id="captureBtn">📸 Ta bilde av kort</button>
+        </div>
+
+        <!-- Laste-animasjon -->
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Scanner kort med AI... 🔍</p>
+        </div>
+
+        <!-- Resultatvisning -->
+        <div id="result" class="hidden result-card">
+            <h2 id="cardName"></h2>
+            <div class="card-image-container">
+                <img id="cardImg" src="http://192.168.1.50:3000/" alt="Pokémon-kort">
+            </div>
+            <p><strong>Sett:</strong> <span id="cardSet"></span></p>
+            <p><strong>Sjeldenhet:</strong> <span id="cardRarity"></span></p>
+            <p><strong>Snittpris:</strong> <span id="cardPrice" class="price"></span></p>
+            <button id="resetBtn">Skann et nytt kort</button>
+        </div>
+    </div>
+
+    <script src="./Pokémon Scanner_files/script.js.download"></script>
+
+
+</body></html>
